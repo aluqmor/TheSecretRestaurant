@@ -1,0 +1,597 @@
+/* -------------------------------- HERO ---------------------------- */
+
+.hero {
+    height: auto;
+    width: 100%;
+    padding: 0 5%;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.deco1 {
+    flex: 1;
+    height: auto;
+    padding-right: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trigo1 {
+    height: 40px;
+    width: 40px;
+
+    background-image: url(../images/trigo1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.team {
+    flex: 2;
+    height: auto;
+    padding: 4% 0;
+    font-family: 'newyork';
+    font-size: 8rem;
+    text-transform: uppercase;
+    border-left: 1px solid #333;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deco2 {
+    flex: 2;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trigo2 {
+    height: 290px;
+    width: 290px;
+    margin-bottom: 4rem;
+
+    background-image: url(../images/trigo2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.trigo3 {
+    height: 200px;
+    width: 200px;
+    margin-top: 4rem;
+
+    background-image: url(../images/trigo3.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ------------------------------ TXT-IMG1 ------------------------- */
+
+.text-img1 {
+    height: auto;
+    width: 100%;
+    padding: 0 10%;
+    margin-top: 8rem;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.ghost1 {
+    flex: 1;
+}
+
+.text1 {
+    flex: 4;
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text1-info {
+    padding-right: 2%;
+    padding-left: 7%;
+}
+
+.patron {
+    width: 90%;
+    aspect-ratio: 3/1;
+
+    background-image: url(../images/patron.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img1 {
+    flex: 4;
+    height: 800px;
+
+    background-image: url(../images/team1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ------------------------------ CHEF ------------------------- */
+
+.chef {
+    height: auto;
+    width: 100%;
+    padding: 0 10%;
+    margin-top: 15rem;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.chef-img {
+    flex: 1;
+    height: 800px;
+    aspect-ratio: 3/6;
+
+    background-image: url(../images/chef2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.chef-text {
+    flex: 1;
+    height: auto;
+    padding: 0 5%;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chef-name {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.chef-name p:nth-child(1) {
+    font-family: newyork;
+    font-size: clamp(2.8rem, 2.4rem + 1.333vw, 4rem);
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.chef-name p:nth-child(2) {
+    font-family: Signature;
+    font-size: clamp(2.8rem, 2.4rem + 1.333vw, 4rem);
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+}
+
+.insta-face {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* --------------------------- IMGS2----------------------------- */
+
+.imgs {
+    height: auto;
+    width: 100%;
+    padding: 0 8%;
+    margin-top: 12rem;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.img2 {
+    flex: 1;
+    height: 550px;
+
+    background-image: url(../images/team2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img3 {
+    flex: 1;
+    height: 550px;
+
+    background-image: url(../images/team3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* --------------------------- SC1 ----------------------------- */
+
+.souschef1-container {
+    height: auto;
+    width: 100%;
+    padding: 0 10%;
+    margin-top: 12rem;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.ghost2 {
+    flex: 1;
+}
+
+.souschef1 {
+    flex: 2;
+    height: auto;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.souschef1-text {
+    flex: 1;
+    height: auto;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.souschef1-name {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.souschef1-name p:first-child {
+    font-family: newyork;
+    font-size: clamp(2.8rem, 2.4rem + 1.333vw, 4rem);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.souschef1-name p:nth-child(2) {
+    font-family: Signature;
+    font-size: clamp(2.8rem, 2.4rem + 1.333vw, 4rem);
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.souschef1-img {
+    flex: 1;
+    height: 600px;
+    aspect-ratio: 3/6;
+
+    background-image: url(../images/sc1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* --------------------------- SC2 ----------------------------- */
+
+.souschef2-container {
+    height: auto;
+    width: 100%;
+    padding: 0 10%;
+    margin-top: 12rem;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.ghost3 {
+    flex: 1;
+}
+
+.souschef2 {
+    flex: 2;
+    height: auto;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.souschef2-text {
+    flex: 1;
+    height: auto;
+    padding-right: 3%;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.souschef2-name {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.souschef2-name p:first-child {
+    font-family: newyork;
+    font-size: clamp(2.8rem, 2.4rem + 1.333vw, 4rem);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.souschef2-name p:nth-child(2) {
+    font-family: Signature;
+    font-size: clamp(2.8rem, 2.4rem + 1.333vw, 4rem);
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.souschef2-img {
+    flex: 1;
+    height: 600px;
+    aspect-ratio: 3/6;
+
+    background-image: url(../images/sc2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* --------------------------- GROUP ----------------------------- */
+
+.group {
+    height: auto;
+    width: 100%;
+    margin-top: 12rem;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.group p {
+    font-family: signature;
+    font-size: clamp(5rem, 4.333rem + 2.222vw, 7rem);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.wall {
+    flex: 800px;
+    width: 70%;
+    min-width: 480px;
+    aspect-ratio: 3/1;
+    margin-top: 0;
+    padding-top: 0;
+    position: relative;
+
+    background-image: url(../images/wall.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.group-img {
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    height: 85%;
+    width: 85%;
+
+    background-image: url(../images/group.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* --------------------------- TXT-IMG2 ----------------------------- */
+
+.text-img2 {
+    margin-top: 10rem;
+    height: auto;
+    width: 100%;
+    padding: 0 10%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text4 {
+    flex: 1;
+    padding: 0 5%;
+}
+
+.img4 {
+    flex: 1;
+    height: 450px;
+
+    background-image: url(../images/team4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* --------------------------- TXT-IMG3 ----------------------------- */
+
+.text-img3 {
+    margin-top: 10rem;
+    height: auto;
+    width: 100%;
+    padding: 0 10%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.text5 {
+    flex: 1;
+    padding-left: 2%;
+}
+
+.img5 {
+    flex: 2;
+    height: 600px;
+
+    background-image: url(../images/team5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ------------------------- MEDIAQUERIES --------------------------- */
+
+@media screen and (max-width: 690px) {
+    nav ul {
+      gap: 3rem;
+    }
+    nav ul li:nth-child(3) {
+      display: none;
+    }
+    nav ul li  {
+      margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .deco1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .deco2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .ghost1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 695px) {
+    .text-img1 {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .patron {
+        display: none;
+    }
+    .img1 {
+        margin-top: 2rem;
+        flex: 600px;
+        width: 600px;
+        min-width: 480px;
+    }
+}
+
+@media screen and (max-width: 1475px) {
+    .chef {
+        flex-flow: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .chef-img {
+        flex: 600px;
+        width: 600px;
+        min-width: 480px;
+    }
+    .insta-face {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text1, .chef-text {
+        padding: 0;
+    }
+    .souschef1-text, .souschef2-text {
+        width:  470px;
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width: 1475px) {
+    .img2 {
+        flex: 500px;
+        width: 800px;
+        min-width: 400px;
+    }
+    .img3 {
+        display: none;
+    }
+    .souschef1-container, .souschef2-container {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ghost2, .ghost3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .souschef1, .souschef2 {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .souschef1-img, .souschef2-img {
+        flex: 600px;
+        width: 600px;
+        min-width: 480px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .text-img2 {
+        margin-top: 2rem;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-img3 {
+        flex-flow: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .img4, .img5 {
+        flex: 600px;
+        width: 600px;
+        min-width: 480px;
+        margin-top: 2rem;
+    }
+}

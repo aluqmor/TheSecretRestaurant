@@ -1,0 +1,421 @@
+/* -------------------------------- HERO ---------------------------- */
+
+.hero {
+    height: auto;
+    width: 100%;
+    padding: 0 5%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.deco1 {
+    flex: 1;
+    height: auto;
+    padding-right: 5rem;
+}
+
+.contact {
+    flex: 2;
+    height: auto;
+    padding: 4% 0;
+    font-family: 'newyork';
+    font-size: 8rem;
+    text-transform: uppercase;
+    border-left: 1px solid #333;
+    padding-left: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deco2 {
+    flex: 2;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.planta {
+    height: 400px;
+    width: 400px;
+    margin-bottom: 4rem;
+
+    background-image: url(../images/leaf.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ------------------------- CONTACT-CONTAINER------------------------ */
+
+.calendar-time {
+    height: auto;
+    width: 100%;
+    padding: 0 10%;
+    margin-top: 8rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* ------------------------- CALENDAR ------------------------ */
+
+.calendar {
+    flex: 1;
+    height: auto;
+    text-align: center;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.month p {
+    font-family: 'newyork';
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.calendar-days {
+    border-top: 1px solid #9c9c9c;
+    padding-top: 2rem;
+    border-spacing: 1rem;
+}
+
+th {
+    font-family: karla;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #333;
+}
+
+td {
+    font-family: karla;
+    font-weight: 250;
+    font-size: 1.2rem;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color: #333;
+}
+
+td:hover {
+    background-color: #333;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.past-date {
+    color: #d3d3d3;
+    pointer-events: none; 
+}
+
+.disabled-date {
+    color: #d3d3d3; 
+    background-color: #f5f5f5; 
+    pointer-events: none; 
+}
+
+.unavailable-date {
+    color: #a9a9a9; 
+    pointer-events: none; 
+}
+
+/* ------------------------- HOURS ------------------------ */
+
+.time {
+    flex: 1;
+    height: auto;
+    text-align: center;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time p {
+    font-family: 'newyork';
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.hours {
+    border-top: 1px solid #9c9c9c;
+    padding-top: 2rem;
+    border-spacing: 1rem;
+}
+
+.sol {
+    height: 25px;
+    width: 25px;
+
+    background-image: url(../images/sol.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.luna {
+    height: 25px;
+    width: 25px;
+
+    background-image: url(../images/luna.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ------------------------- NUMBER ------------------------ */
+
+.number {
+    flex: 1;
+    height: auto;
+    text-align: center;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-div {
+    border-top: 1px solid #9c9c9c;
+    gap: 4rem;
+    text-align: center;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.number p {
+    font-family: 'newyork';
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.one {
+    padding-top: 2rem;
+    border-spacing: 1rem;
+    font-family: karla;
+    font-weight: 350;
+}
+
+.number-div .minus, .plus {
+    margin-top: 12px;
+}
+
+.button-m ,.button-p {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    color: #333;
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.button-m:hover, .button-p:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* ------------------------- NAME-SURNAME ------------------------ */
+
+.name-surname {
+    margin-top: 8rem;
+    height: auto;
+    width: 100%;
+    gap: 8rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 400px; 
+    height: 40px; 
+    background-color: transparent; 
+    border: none;
+    border-bottom: 1px solid #9c9c9c;
+    overflow: hidden;
+    color: #333; 
+    font-size: 1rem; 
+    font-family: karla;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    font-weight: 350;
+    padding: 1rem 5px;
+    box-sizing: border-box;
+    transition: border-bottom-color 0.3s ease;
+}
+
+input:focus {
+    outline: none; 
+    border-bottom-color: #333; 
+}
+
+/* ------------------------- NUMBER-EMAIL ------------------------ */
+
+.number-email {
+    margin-top: 6rem;
+    height: auto;
+    width: 100%;
+    gap: 8rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------- ALERGIES ------------------------ */
+
+.alergies {
+    margin-top: 6rem;
+    height: auto;
+    width: 100%;
+    gap: 8rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.aler-container {
+    margin-right: 25rem;
+}
+
+/* ------------------------- BUTTON ------------------------ */
+
+.boton-container {
+    margin-top: 8rem;
+}
+
+.boton {
+    place-self: center;
+}
+
+.boton {
+    margin-top: 2rem;
+  }
+  
+  .boton:hover {
+    color: white; 
+  }
+  
+  .boton .fork{
+    height: 15px;
+    width: 15px;
+  
+    fill: #333;
+    transition: background-image 1s ease; 
+  }
+  
+  .boton:hover .fork {
+    height: 15px;
+    width: 15px;
+    fill: white;
+    z-index: 1;
+  }
+
+/* ------------------------- MAP ------------------------ */
+
+.map {
+    margin-top: 10rem;
+    position: relative;
+    width: 100%;           
+    padding-bottom: 30%; 
+    height: 0;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    min-height: 300px;     
+    height: 100%;      
+}
+
+/* ------------------------- MEDIAQUERIES ----------------------------- */
+
+@media screen and (max-width: 690px) {
+    nav ul {
+      gap: 3rem;
+    }
+    nav ul li:nth-child(3) {
+      display: none;
+    }
+    nav ul li  {
+      margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .deco1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .deco2 {
+        display: none;
+    }
+    .hero {
+        margin-top: 2rem;
+    }
+    .contact {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .contact {
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 1165px) {
+    .calendar-time {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .time, .number {
+        margin-top: 6rem;
+    }
+}
+
+@media screen and (max-width: 985px) {
+    .name-surname, .number-email, .alergies {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .ghost {
+        display: none;
+    }
+    .aler-container {
+        margin-right: 0;
+    }
+}

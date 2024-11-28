@@ -1,0 +1,382 @@
+/* -------------------------------- HERO ---------------------------- */
+
+.hero {
+    height: auto;
+    width: 100%;
+    padding: 0 5%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.deco1 {
+    flex: 1;
+    height: auto;
+    padding-right: 5rem;
+}
+
+.menu {
+    flex: 2;
+    height: auto;
+    padding: 4% 0;
+    font-family: 'newyork';
+    font-size: 8rem;
+    text-transform: uppercase;
+    border-left: 1px solid #333;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deco2 {
+    flex: 2;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.seta {
+    height: 400px;
+    width: 400px;
+    margin-bottom: 4rem;
+
+    background-image: url(../images/seta.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ------------------------- IMGS ----------------------------------- */
+
+.img1 {
+    margin-top: 6rem;
+    width: 50%;
+    height: 70%;
+    position: relative;
+
+    background-image: url(../images/menu1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 20%;
+    left: 93%;
+
+    background-image: url(../images/menu2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ---------------------------- INTRODUCTION ----------------------- */
+
+.introduction {
+    height: auto;
+    width: 60%;
+    margin-top: 18rem;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    place-self: center;
+    padding: 12rem;
+}
+
+/* -------------------------------- DISH 1-------------------------- */
+
+.dish1 {
+    height: auto;
+    width: 100%;
+    margin-top: 12rem;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.dish1-text {
+    flex: 2;
+    padding: 0 3%;
+    gap: 2rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.dish1-text p:first-child {
+    font-family: newyork;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.dish1-img {
+    flex: 6;
+    height: 900px;
+
+    background-image: url(../images/dish1.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+/* -------------------------------- DISH 2 -------------------------- */
+
+.dish2 {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.dish2-text {
+    flex: 2;
+    padding: 0 3%;
+    gap: 2rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.dish2-text p:first-child {
+    font-family: newyork;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.dish2-img {
+    flex: 6;
+    height: 900px;
+
+    background-image: url(../images/dish2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* -------------------------------- MENUS -------------------------- */
+
+.menu1 {
+    height: auto;
+    width: 60%;
+    margin-top: 14rem;
+    place-self: center;
+    border: 5px solid #333;
+    background-color: #fff;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.menu1-name, .menu2-name {
+    font-family: 'Signature';
+    font-size: clamp(4.5rem, 4rem + 1.667vw, 6rem);
+    padding: 2rem;
+    align-self: center;
+}
+
+.dish {
+    height: 200px;
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    place-self: center;
+    border-bottom: 1px solid #333;
+}
+
+.menu2 .dish {
+    border-bottom: 1px solid #9c9c9c;
+}
+
+.dish-number {
+    font-family: 'newyork';
+    font-size: clamp(1.1rem, 1.033rem + 0.222vw, 1.3rem);
+    padding-left: 6rem;
+}
+
+.dish-name {
+    padding-left: 4rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu1-price, .menu2-price {
+    font-family: 'newyork';
+    font-size: 3rem;
+    place-self: center;
+    padding: 4rem;
+}
+
+.menu2 {
+    height: auto;
+    width: 60%;
+    margin-top: 14rem;
+    place-self: center;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* ---------------------------- GALLERY ----------------------------- */
+
+.gallery-container p {
+    font-family: signature;
+    font-size: clamp(5rem, 4.333rem + 2.222vw, 7rem);
+    text-align: center;
+    margin-top: 14rem;
+}
+
+.gallery {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    
+    columns: 3 300px;
+    
+    margin-bottom: 4rem;
+}
+
+img {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+/* ------------------------------ MEDIAQUERIES ------------------------ */
+
+@media screen and (max-width: 690px) {
+    nav ul {
+      gap: 3rem;
+    }
+    nav ul li:nth-child(3) {
+      display: none;
+    }
+    nav ul li  {
+      margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .deco1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .deco2 {
+        display: none;
+    }
+    .hero {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 1510px) {
+    .img1 {
+      width: 80%;
+      margin-bottom: 30rem;
+    }
+    .img2 {
+      width: 60%;
+      height: 60%;
+      left: 20%;
+      top: 90%;
+    }
+}
+  
+@media screen and (max-width: 1138px) {
+    .img1 {
+      width: 100%;
+    }
+    .img2 {
+      width: 100%;
+      height: 70%;
+      left: 0;
+    }
+}
+  
+@media screen and (max-width: 656px) {
+    .img1 {
+      background-size: contain;
+      margin-bottom: 16rem;
+    }
+    .img2 {
+      background-size: contain;
+      top: 70%;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .introduction {
+        width: 80%;
+        padding: 6rem;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .introduction {
+        width: 100%;
+        padding: 2rem;
+        border: none;
+    }
+    .dish-number {
+        padding-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 1312px) {
+    .dish1 {
+        flex-flow: column;
+    }
+    .dish2 {
+        margin-top: 6rem;
+        flex-flow: column-reverse;
+    }
+    .dish1-img {
+        margin-top: 2rem;
+        width: 100%;
+        flex: 500px;
+    }
+    .dish2-img {
+        margin-top: 2rem;
+        width: 100%;
+        flex: 500px;
+    }
+}
+
+@media screen and (max-width: 1555px) {
+    .dish {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .menu1, .menu2 {
+        width: 100%;
+    }
+
+    .dish {
+        width: 100%;
+    }
+}

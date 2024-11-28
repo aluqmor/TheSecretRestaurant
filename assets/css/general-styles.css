@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+@font-face {
+  font-family: 'newyork';
+  src: url(../fonts/NewYork\ PERSONAL\ USE.otf);
+}
+
+@font-face {
+    font-family: 'Signature'; 
+    src: url(../fonts/Thesignature.ttf), url(../fonts/Thesignature.eot);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-image: url(../images/fondo.png);
+    color: #333;
+}
+
+p {
+  font-family: Karla;
+  font-weight: 250;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  font-size: clamp(1.1rem, 1.033rem + 0.222vw, 1.3rem);
+}
+
+p span {
+  font-weight: 400;
+}
+
+/* ------------------------------ NAV --------------------------------*/
+nav {
+  width: 100%;
+  height: 13%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  position: relative;
+  font-size: clamp(1.2rem, 1.133rem + 0.222vw, 1.4rem);
+  color: #333;
+  font-family: 'Karla';
+  font-weight: 300;
+}
+
+.minilogo {
+  font-family: 'Signature';
+  font-size: clamp(3.5rem, 3rem + 1.667vw, 5rem);
+  color: #333;
+  list-style-type: none;
+  text-decoration: none;
+  padding-top: 1rem;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -1px; 
+  left: 0;
+  width: 100%;
+  height: 1px; 
+  background-color: #333; 
+  transform: scaleX(0); /* Oculta la barra */
+  transform-origin: left; 
+  transition: transform 0.3s ease; 
+}
+
+.nav-item:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-item::after {
+  transform-origin: left; /* Esconde la barra al quitar el raton de encima */
+}
+
+/* ------------------------------ FOOTER --------------------------------*/
+
+.footer {
+  width: 100%;
+  height: auto;
+  margin-top: 14rem;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer1 {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 4rem;
+}
+
+.logo2 {
+  flex: 1;
+  font-family: Signature;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.restaurant2 {
+  font-family: 'Karla';
+  font-weight: 300;
+  letter-spacing: 1.3rem;
+  font-size: .7rem;
+  text-align: center;
+  
+}
+
+.info {
+  flex: 1;
+  height: 250px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: clamp(1.1rem, 1.067rem + 0.111vw, 1.2rem);
+}
+
+.location {
+  flex: 100px;
+  padding-bottom: 1.5rem;
+}
+
+.socials2 {
+  flex: 50px;
+  padding-bottom: 1.5rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials2 a {
+  height: 40px;
+  width: 40px;
+  margin: 0 1rem;
+}
+
+.qr {
+  flex: 1;
+  height: 200px;
+
+  background-image: url(../images/qr.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer2 {
+  width: 100%;
+  flex: 50px;
+  font-size: clamp(1.1rem, 1.067rem + 0.111vw, 1.2rem);
+  font-weight: 300;
+  background-color: #333;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------ BOTONES --------------------------------*/
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  background-color: transparent;
+  border: 2px solid transparent; 
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.boton::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px; 
+  background-color: #333;
+}
+
+.boton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #333;
+  z-index: 1;
+  transition: width 0.3s ease; 
+}
+
+.boton:hover::before {
+  width: 100%;
+}
+
+.boton span {
+  z-index: 1;
+}
+
+/* ------------------------------ SOCIALS --------------------------------*/
+
+.instagram {
+  transition: transform 0.3s ease;
+  height: 40px;
+  width: 40px;
+
+  background-image: url(../images/instagram.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.instagram:hover {
+  transform: scale(1.1); 
+}
+
+.facebook {
+  transition: transform 0.3s ease;
+  height: 40px;
+  width: 40px;
+
+  background-image: url(../images/facebook.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.facebook:hover {
+  transform: scale(1.1); 
+}
+
+.tripadvisor {
+  transition: transform 0.3s ease;
+  height: 40px;
+  width: 40px;
+
+  background-image: url(../images/tripadvisor.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tripadvisor:hover {
+  transform: scale(1.1); 
+}
+
+/* ------------------------------ MEDIAQUERY ----------------------------*/
+
+@media screen and (max-width: 1000px) {
+  .footer1 {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+  }
+
+  .qr {
+    flex: 200px;
+    width: 200px;
+  }
+}
